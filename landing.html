@@ -1,0 +1,931 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Oeuvre</title>
+	
+	 <!-- Basic Page Needs
+    ================================================== -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	 <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS
+    ================================================== -->
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/linea-icon.css" />
+	<link rel="stylesheet" href="css/fancy-buttons.css" />
+	
+	<!--=== Google Fonts ===-->
+	<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<!--=== Other CSS files ===-->
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/jquery.vegas.css" />
+	<link rel="stylesheet" href="css/baraja.css" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" />
+	
+
+
+	<!--=== Main Stylesheets ===-->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/login.css" />
+	
+	<!--=== Color Scheme===-->
+	<link rel="stylesheet" id="scheme-source" href="css/schemes/orange.css" />
+
+	
+	
+	<!--=== Internet explorer fix ===-->
+	<!-- [if lt IE 9]>
+		<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif] -->
+	
+	
+</head>
+<body>
+	<!--=== Preloader section starts ===-->
+	<!-- <section id="preloader">
+		<div class="loading-circle fa-spin"></div>
+	</section> -->
+	<!--=== Preloader section Ends ===-->
+	
+	<!--=== Header section Starts ===-->
+	<div id="header" class="header-section">
+		<!-- sticky-bar Starts-->
+		<div class="sticky-bar-wrap">
+			<div class="sticky-section">
+				<div id="topbar-hold" class="nav-hold container">
+					<nav class="navbar" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+							</button>
+							<!--=== Site Name ===-->
+							<a class="site-name navbar-brand" href="#"><span>O</span>euvre</a>
+						</div>
+						
+						<!-- Main Navigation menu Starts -->
+						<div class="collapse navbar-collapse navbar-responsive-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="current"><a href="#section-artists">Художники</a></li>
+								<li><a href="#section-Library">Библиотеки</a></li>
+								<li><a href="#study-1">Исследование</a></li>
+								<li><a href="#section-about">О проекте</a></li>
+								<li><a href="#section-screenshots">Галерея</a></li>
+								<li><a href="#section-testimonials">Пигменты и цвета</a></li>
+								<li><a href="#section-contact">Контакты</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#login-modal">Log in</a></li>
+							</ul>
+						</div>
+						<!-- Main Navigation menu ends-->
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!-- sticky-bar Ends-->
+		<!--=== Header section Ends ===-->
+		
+		<!--=== Home Section Starts ===-->
+		<div id="section-home" class="home-section-wrap center">
+			<div class="section-overlay"></div>
+			<div class="container home">
+				<div class="row">
+					<h1 class="well-come">Прозведения искусства</h1>
+					
+					<div class="col-md-8 col-md-offset-2">
+						<p class="intro-message">бла-бла-бла</p>
+						<a href="#section-about" class="btn1 btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--=== Home Section Ends ===-->
+	</div>
+
+	    <!-- BEGIN # MODAL LOGIN -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" align="center">
+                            <span class="glyphicon glyphicon-user icon-size"></span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        
+                        <!-- Begin # DIV Form -->
+                        <div id="div-forms">
+                        
+                            <!-- Begin # Login Form -->
+                            <form id="login-form">
+                                <div class="modal-body">
+                                    <div id="div-login-msg">
+                                        <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                        <span id="text-login-msg">Введите имя пользователя и пароль.</span>
+                                    </div>
+                                    <input id="login_username" class="form-control" type="text" placeholder="Имя пользователя" required>
+                                    <input id="login_password" class="form-control" type="password" placeholder="Пароль" required>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Запомнить меня
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-warning btn-lg btn-block btn-default"><span class="glyphicon glyphicon-ok"></span> Войти</button>
+                                    </div>
+                                    <div>
+                                        <button id="login_lost_btn" type="button" class="btn-link">Забыли пароль?</button>
+                                        <button id="login_register_btn" type="button" class="btn-link">Регистрация</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End # Login Form -->
+                            
+                            <!-- Begin | Lost Password Form -->
+                            <form id="lost-form" style="display:none;">
+                                <div class="modal-body">
+                                    <div id="div-lost-msg">
+                                        <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                        <span id="text-lost-msg">Укажите ваш e-mail.</span>
+                                    </div>
+                                    <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+                                </div>
+                                <div class="modal-footer">
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block btn-default">Отправить</button>
+                                    </div>
+                                    <div>
+                                        <button id="lost_login_btn" type="button" class="btn-link">Авторизация</button>
+                                        <button id="lost_register_btn" type="button" class="btn-link">Регистрация</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End | Lost Password Form -->
+                            
+                            <!-- Begin | Register Form -->
+                            <form id="register-form" style="display:none;">
+                                <div class="modal-body">
+                                    <div id="div-register-msg">
+                                        <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                        <span id="text-register-msg">Регистрация аккаунта.</span>
+                                    </div>
+                                    <input id="register_username" class="form-control" type="text" placeholder="Имя пользователя" required>
+                                    <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                                    <input id="register_password" class="form-control" type="password" placeholder="Пароль" required>
+                                    <input id="register_repeat_password" class="form-control" type="repeat_password" placeholder="Повторить пароль" required>
+                                </div>
+                                <div class="modal-footer">
+                                    <div>
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block btn-default">Регистрация</button>
+                                    </div>
+                                    <div>
+                                        <button id="register_login_btn" type="button" class="btn-link">Авторизация</button>
+                                        <button id="register_lost_btn" type="button" class="btn-link">Забыли пароль?</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End | Register Form -->
+                            
+                        </div>
+                        <!-- End # DIV Form -->
+                        
+                    </div>
+                </div>
+        </div>
+    <!-- END # MODAL LOGIN -->
+	
+	
+	<!--=== Artists section Starts ===-->
+	<section id="section-artists" class="artists-wrap">
+	<a name="section-artists"></a>
+		<div class="container artists center">
+			<div class="row">
+			<div class="col-lg-10 col-md-offset-1 center section-title-artists">
+					<h3>ХУДОЖНИКИ</h3>
+				</div>
+				<div class="col-lg-12">
+						<!--artists container Starts -->
+						<ul id="card-ul" class="artists-hold baraja-container">
+						
+							<!-- Single artists Starts -->
+							<li>
+								<img src="images/h-1.jpg" alt="" class="artists-image" /><!-- artists Icon -->
+								<h4 class="artists-title color-scheme">Пабло Пикассо</h4>
+								<p class="artists-text">
+									1881 г.-1973 г.
+								</p> 
+								
+									<a href="gallery-artists.html" class="fancy-button button-line btn-col small vertical">
+										Дальше
+										<span class="icon">
+											<i class="fa fa-leaf"></i>
+										</span>
+									</a>
+								
+							</li>
+							<!-- Single artists Ends -->
+							
+							<!-- Single artists Starts -->
+							<li>
+								<img src="images/h-2.jpg" alt="" class="artists-image" /><!-- artists Icon -->
+								<h4 class="artists-title color-scheme">Айвазовский И.К.</h4>
+								<p class="artists-text">
+									1817 г.-1900 г.
+								</p>
+								<a href="gallery-artists.html" class="fancy-button button-line btn-col small zoom">
+									Дальше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							</li>
+							<!-- Single artists Ends -->
+							
+							<!-- Single artists Starts -->
+							<li>
+								<img src="images/h-8.jpg" alt="" class="artists-image" /><!-- artists Icon -->
+								<h4 class="artists-title color-scheme">Микеланджело</h4>
+								<p class="artists-text">
+									1475 г.-1564 г.
+								</p>
+								<a href="#" class="fancy-button button-line btn-col small zoom">
+									Дальше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							</li>
+							<!-- Single artists Ends -->
+							
+							<!-- Single artists Starts -->
+							<li>
+								<img src="images/h-3.jpg" alt="" class="artists-image" /><!-- artists Icon -->
+								<h4 class="artists-title color-scheme">Леонардно да Винчи</h4>
+								<p class="artists-text">
+									1452 г.-1519 г.
+								</p>
+								<a href="gallery-artists.html" class="fancy-button button-line btn-col small zoom">
+									Дальше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							</li>
+							<!-- Single artists Ends -->
+							
+							<!-- Single artists Starts -->
+							<li>
+								<img src="images/h-4.jpg" alt="" class="artists-image" /><!-- artists Icon -->
+								<h4 class="artists-title color-scheme">Левитан И.И.</h4>
+								<p class="artists-text">
+									1860 г.-1900 г.
+								</p>
+								<a href="gallery-artists.html" class="fancy-button button-line btn-col small zoom">
+									Дальше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							</li>
+							<!-- Single artists Ends -->
+							
+							<!-- Single artists Starts -->
+							<li>
+								<img src="images/h-5.jpg" alt="" class="artists-image" /><!-- artists Icon -->
+								<h4 class="artists-title color-scheme">Рембранд</h4>
+								<p class="artists-text">
+									1606 г.-1669 г.
+								</p>
+								<a href="gallery-artists.html" class="fancy-button button-line btn-col small zoom">
+									Дальше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							</li>
+							<!-- Single artists Ends -->
+							
+							<!-- Single artists Starts -->
+							<li>
+								<img src="images/h-6.jpg" alt="" class="artists-image" /><!-- artists Icon -->
+								<h4 class="artists-title color-scheme">Сальвадор Дали</h4>
+								<p class="artists-text">
+									1904 г.-1989 г.
+								</p>
+								<a href="gallery-artists.html" class="fancy-button button-line btn-col small zoom">
+									Дальше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							</li>
+							<!-- Single artists Ends -->
+							
+							<!-- Single artists Starts -->
+							<li>
+								<img src="images/h-7.jpg" alt="" class="artists-image" /><!-- artists Icon -->
+								<h4 class="artists-title color-scheme">Клод Моне</h4>
+								<p class="artists-text">
+									1840 г.-1926 г.
+								</p>
+								<a href="gallery-artists.html" class="fancy-button button-line btn-col small zoom">
+									Дальше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							</li>
+							<!-- Single artists Ends -->
+						</ul>
+						<!--artists container Ends -->
+						
+						<!-- artists Controls Starts -->
+						<div class="artists-control relative">
+							<button class="control-icon fancy-button button-line no-text btn-col bell" id="artists-prev" title="Previous" >
+								<span class="icon">
+									<i class="fa fa-arrow-left"></i>
+								</span>
+							</button>
+							<button class="control-icon fancy-button button-line no-text btn-col zoom" id="artists-expand" title="Expand" >
+								<span class="icon">
+									<i class="fa fa-expand"></i>
+								</span>
+							</button>
+							<button class="control-icon fancy-button button-line no-text btn-col zoom" id="artists-close" title="Collapse" >
+								<span class="icon">
+									<i class="fa fa-compress"></i>
+								</span>
+							</button>
+							<button class="control-icon fancy-button button-line no-text btn-col bell" id="artists-next" title="Next" >
+								<span class="icon">
+									<i class="fa fa-arrow-right"></i>
+								</span>
+							</button>
+						</div>
+						<!-- artists Controls Ends -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Artists section Ends ===-->
+	
+	<!--=== Library section Starts ===-->
+	<section id="section-Library" class="Library-wrap">
+	<a name="section-Library"></a>
+		<div class="container Library">
+			<div class="row">
+			
+				<div class="col-md-10 col-md-offset-1 center section-title">
+					<h3>БИБЛИОТЕКИ</h3>
+				</div>
+
+
+				<!-- Single Library Starts -->
+				<div class="col-md-6 col-sm-6 Library animated" data-animation="fadeInUp" data-animation-delay="700">
+					<span class="Library-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
+					<div class="Library-desc">
+						<h4 class="Library-title color-scheme">SDBS</h4>
+						<p class="Library-description justify">
+							Библиотеки масс-спектральных данных, содежащая около 25 тыс. экспериментально определенных масс спектров органических веществ.
+						</p>
+					</div>
+				</div>
+				<!-- Single Library ends -->				
+				
+				
+				<!-- Single Library Starts -->
+				<div class="col-md-6 col-sm-6 Library animated" data-animation="fadeInRight" data-animation-delay="700">
+					<span class="Library-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
+					<div class="Library-desc">
+						<h4 class="Library-title color-scheme">WILEY 07</h4>
+						<p class="Library-description justify">
+							Библиотеки масс-спектральных данных, созданная профессором Мак-Лафферти, при участии Национального бюро стандартов США, - около
+                            450 000 масс-спектров, во многом пересекается с библиотеками NIST.
+						</p>
+					</div>
+				</div>
+				<!-- Single Library Ends -->
+				
+				<!-- Single Library Starts -->
+				<div class="col-md-6 col-sm-6 Library animated" data-animation="fadeInUp" data-animation-delay="700">
+					<span class="Library-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
+					<div class="Library-desc">
+						<h4 class="Library-title color-scheme">БИБЛИОТЕКИ НИОХ СО РАН</h4>
+						<p class="Library-description justify">
+							Библиотеки созданные и поддерживаемые в НИОХ СО РАН, по природным соединениям, веществам, часто используемые в синтезах химиками НИОХ СО РАН, продуктами и полупродуктами синтезов - суммарно до 10 000 масс-спектров, информацию о методе записи хроматограммы, из которой взят масс-спектор, время удержания или индекс удержания.
+						</p>
+					</div>
+				</div>
+				<!-- Single Library Ends -->
+
+				<!-- Single Library Starts -->
+				<div class="col-md-6 col-sm-6 Library animated" data-animation="fadeInLeft" data-animation-delay="700">
+					<span class="Library-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
+					<div class="Library-desc">
+						<h4 class="Library-title color-scheme">NIST 07/NIST 08</h4>
+						<p class="Library-description justify">
+							Библиотеки масс-спектральных данных, созданные и поддерживаемые Национальным Институтом Стандартизации и Технологии США - содержат
+                            около 300 000 масс-спектров
+						</p>
+					</div>
+				</div>
+				<!-- Single Library Ends -->
+
+			</div>
+		</div>
+	</section>
+	<!--=== Library section Ends ===-->
+	
+	<!--=== Study-1 section Starts ===-->
+	<section id="study-1" class="section-study study-wrap">
+	<a name="section-study-1"></a>
+		<div class="container study animated" data-animation="bounceInLeft" data-animation-delay="700">
+			<div class="row">
+				<!-- study Description Starts -->
+				<div class="col-md-8 study-desc">
+					<div class="col-md-2 center">
+						<div class="study-no">
+							<span class="no-inner">1</span>
+						</div>
+					</div>
+					
+					<div class="col-md-10 study-details">
+							<h3 class="study-title color-scheme">СПЕКТРАЛЬНЫЙ АНАЛИЗ КАРТИНЫ</h3>
+							<p class="study-description">бла-бла-бла <strong>бла-бла-бла</strong>бла-бла-блабла-бла-бла
+							бла-бла-бла
+							бла-бла-бла
+							бла-бла-блабла-бла-блабла-бла-блабла-бла-блабла-бла-блабла-бла-бла</p>							
+							
+					</div> <!-- End study-details -->
+				</div>
+				<!-- study Description Ends -->
+				<div class="col-md-4 study-img">
+					<img src="images/note.png" alt="" /> <!-- study Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Study-1 section Ends ===-->
+	
+	<!--=== Study-2 section Starts ===-->
+	<section id="study-2" class="section-study study-even study-wrap">
+		<div class="container study animated" data-animation="bounceInRight" data-animation-delay="700">
+			<div class="row">
+				<!-- study Description Starts -->
+				<div class="col-md-8 study-desc">
+					<div class="col-md-2 center">
+						<div class="study-no">
+							<span class="no-inner">2</span>
+						</div>
+					</div>
+					
+					<div class="col-md-10 study-details">
+							<h3 class="study-title color-scheme">ЭКСПЕРТНОЕ ЗАКЛЮЧЕНИЕ</h3>
+							<p class="study-description">бла-бла-бла <strong>бла-бла-бла</strong>бла-бла-блабла-бла-бла
+							бла-бла-бла
+							бла-бла-бла
+							бла-бла-блабла-бла-блабла-бла-блабла-бла-блабла-бла-блабла-бла-бла</p>	
+							
+					</div><!-- End study-details -->
+				</div>
+				<!-- study Description Ends -->
+				<div class="col-md-4 study-img">
+					<img src="images/desk.png" alt="" /> <!-- study Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Study-2 section Ends ===-->
+	
+	<!--=== About section Starts ===-->
+	<section id="section-about" class="section-about-wrap">
+	<a name="section-about"></a>
+		<div class="section-overlay"></div>
+		<div class="container big-about center animated" data-animation="fadeInLeft" data-animation-delay="700">
+			<div class="row">
+				<div class="col-md-12 section-title">
+					<h3>О ПРОЕКТЕ</h3>
+				</div>
+				
+				
+				<p class="study-description">
+					Библиотеки масс-спектральных данных, содежащая около 25 тыс. экспериментально определенных масс спектров органических веществ.
+				</p>
+				<div class="home-buttons">
+					<button class="fancy-button button-line button-white vertical md-trigger" data-modal="modal-13">Узнать больше
+						<span class="icon">
+							<i class="fa fa-leaf"></i>
+						</span>
+					</button>	
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!--=== About section Ends ===-->
+	
+	<!--=== ScreenShots section Starts ===-->
+	<section id="section-screenshots" class="screenshots-wrap">
+		<div class="container screenshots animated" data-animation="fadeInUp" data-animation-delay="1000">
+		<a name="section-screenshots"></a>
+			<div class="row porfolio-container">
+				<div class="col-md-10 col-md-offset-1 center section-title">
+					<h3>ГАЛЕРЕЯ КАРТИН</h3>
+				</div>
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/g-5.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Название картины</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/g-2.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Название картины</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/g-3.jpeg" alt="" />
+							<div class="photo-overlay">
+								<h4>Название картины</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/g-4.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Название картины</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/g-1.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Название картины</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/g-6.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Название картины</h4>
+							</div>
+							<span class="photo-zoom">
+								<a href="single-project.html" class="view-project"><i class="fa fa-search-plus fa-2x"></i></a>
+							</span>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+				
+			</div>
+			
+			<div id="portfolio-loader" class="center">
+				<div class="loading-circle fa-spin"></div>
+			</div> <!--=== Portfolio loader ===-->
+			
+			<div id="portfolio-load"></div><!--=== ajax content will be loaded here ===-->
+			
+			<div class="col-md-12 center back-button">
+				<a class="backToProject fancy-button button-line bell btn-col" href="#">
+					Назад
+					<span class="icon">
+						<i class="fa fa-arrow-left"></i>
+					</span>
+				</a>
+			</div><!--=== Single portfolio back button ===-->
+		</div>
+	</section>
+	<!--=== ScreenShots section Ends ===-->
+	
+	<!--=== Pigments and colors section Starts ===-->
+	<section id="section-testimonials" class="testimonials-wrap">
+	<a name="section-testimonials"></a>
+		<div class="section-overlay"></div>
+		<div class="container testimonials center animated" data-animation="rollIn" data-animation-delay="500">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="testimonial-slider">
+						<!-- Pigments Starts -->
+						<div class="testimonial">
+							<p class="comment">
+								КАТАЛОГ ПИГМЕНТОВ
+							</p>
+							<div class="home-buttons">
+								<a href="pigments.html" class="fancy-button button-line button-white vertical">
+									Узнать больше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							
+							</div>
+							
+						</div>
+						<!-- Pigments Ends -->
+						
+						<!-- Colors Starts -->
+						<div class="testimonial">
+							<p class="comment">
+								КАТАЛОГ ЦВЕТОВ
+							</p>
+							
+							<div class="home-buttons">
+								<a href="colors.html" class="fancy-button button-line button-white vertical">
+									Узнать больше
+									<span class="icon">
+										<i class="fa fa-leaf"></i>
+									</span>
+								</a>
+							
+							</div>
+						</div>
+						<!-- Colors Ends -->
+						
+						
+					</div>
+					<div id="bx-pager" class="client-photos">
+						<a data-slide-index="0" href="" class="photo-hold">
+							<span class="photo-bg">
+								<img src="images/pigment.jpg" alt="" /> <!-- Client photo 1 -->
+							</span>
+						</a>
+						<a data-slide-index="1" href="" class="photo-hold">
+							<span class="photo-bg">
+								<img src="images/цвета.png" alt="" /> <!-- Client photo 2 -->
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Pigments and colors section Ends ===-->
+	
+	<!--=== Subscribe section Starts ===-->
+	<section id="section-subscribe" class="subscribe-wrap">
+		<div class="section-overlay"></div>
+		<div class="container subscribe center">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="subscription-success"></p>
+					<p class="subscription-failed"></p>
+					<div class="col-md-10 col-md-offset-1 center section-title">
+						<h3>Подписка</h3>
+					</div>
+					<form id="subscription-form">
+						<input type="email" name="EMAIL" required="required" placeholder="Your Email" class="input-email" />
+						<button type="submit" id="subscription-btn" class="fancy-button button-line button-white large zoom">
+							Подписаться
+							<span class="icon">
+								<i class="fa fa-sign-in"></i>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Subscribe section Ends ===-->
+	
+	
+	
+	
+	
+	<!--=== Contact section Starts ===-->
+	<section id="section-contact" class="contact-wrap">
+	<a name="section-contact">
+	<div class="section-overlay"></div>
+		<div class="container contact center animated" data-animation="flipInY" data-animation-delay="1000">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-10 col-md-offset-1 center section-title">
+						<h3>ОСТАВИТЬ СООБЩЕНИЕ</h3>
+					</div>
+					
+					<div class="confirmation">
+						<p><span class="fa fa-check"></span></p>
+					</div>
+					
+					<form class="contact-form support-form">
+						
+						<div class="col-lg-12">
+							<input id="name" class="input-field form-item field-name" type="text" required="required" name="contact-name" placeholder="Name" />
+
+							<input id="email" class="input-field form-item field-email" type="email" required="required" name="contact-email" placeholder="Email" />
+
+							<input id="subject" class="input-field form-item field-subject" type="text" required="required" name="contact-subject" placeholder="Subject" />
+							<textarea id="message" class="textarea-field form-item field-message" rows="10" name="contact-message" placeholder="Message"></textarea>
+						</div>
+						<button type="submit" class="fancy-button button-line button-white large zoom subform">
+							Оправить
+							<span class="icon">
+								<i class="fa fa-paper-plane-o"></i>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Contact section Ends ===-->
+	
+	<!--=== Footer section Starts ===-->
+	<div id="section-footer" class="footer-wrap">
+		<div class="container footer center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h4 class="footer-title"><!-- Footer Title -->
+						<a class="site-name" href="#"><span>O</span>euvre</a>
+					</h4>
+					</div>
+					
+					 <div class="col-md-6  col-xs-10"> 
+                <h3 class="menu_head">ПОМОЧЬ ПРОЕКТУ</h3>
+                <div>
+                        <p class="text-muted">We hope you have enjoyed using Materialize! If you feel Materialize has helped you out and want to support the team, send us over a donation! Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                        <a href="#" class="fancy-button button-line button-white zoom">Donate <span class="icon"><i class="fa fa-lg fa fa-usd"></i></span></a>
+                    </div>
+                </div>
+					<div class="col-md-6 col-xs-12">
+                    <h3 class="menu_head">НАШИ КОНТАКТЫ</h3>
+                    <div class="footer_menu_contact">
+                        <ul>
+                            <li> <i class="fa fa-home"></i>
+                                <span> г. Гродно, ул. Ожешко, 22 </span></li>
+                            <li><i class="fa fa-globe"></i>
+                                <span> +375(29)111 11 11</span></li>
+                            <li><i class="fa fa-phone"></i>
+                                <span> info@mail.com</span></li>
+                            <li><i class="fa fa-map-marker"></i>
+                            <span> www.web.com</span></li>
+                         </ul>
+                    </div>
+                </div>
+				
+			</div>
+		</div>
+	</div>
+	<!--=== Footer section Ends ===-->
+	<!--=== Footer section Starts ===-->
+	<div id="section-footer2" class="footer-wrap">
+		<div class="container footer center">
+			<div class="row">
+				<div class="col-lg-12">
+					
+					<div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer_bottom">
+                        <p class="text-block"> All rights reserved &copy; 2016</p>
+                    </div>
+                </div>
+					<!-- Social Links -->
+					<div class="footer_mid pull-right social-icons">
+						<ul class="social-contact list-inline">
+                            <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                            <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--=== Footer section Ends ===-->
+	<!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+
+	<div class="md-modal md-effect-13" id="modal-13">
+			<div class="md-content">
+				<h3>О проекте</h3>
+				<div>
+					<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+					<div class="home-buttons">
+					<button class="fancy-button button-line button-white vertical md-close" data-modal="modal-13">Закрыть
+					</button>	
+				</div>
+				</div>
+			</div>
+	</div>
+	
+<!--==== Js files ====-->
+<!--==== Essential files ====-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<!--==== Slider and Card style plugin ====-->
+<script type="text/javascript" src="js/jquery.baraja.js"></script>
+<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+<!--==== MailChimp Widget plugin ====-->
+<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+
+<!--==== Scroll and navigation plugins ====-->
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+
+<!--==== Custom Script files ====-->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!--==== login Script files ====-->
+<script type="text/javascript" src="js/login.js"></script>
+
+<!--==== Modal About Script files ====-->
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+
+		
+
+</body>
+</html>
