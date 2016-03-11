@@ -121,9 +121,9 @@
 
 .btn {
     border-radius: 0px;
-    color:  #6C7B8B;
-    background: no-repeat;
-    border-color: #FF8247;
+    color:  white;
+    background: #FF8247;
+    border-color: white;
 }
 
 .btn:focus,
@@ -135,7 +135,7 @@
 .btn:hover {
     outline: none;
     color: white;
-    background: #FF8247;
+    background: #FF4500;
      border-color: white;
 }
 
